@@ -1,0 +1,118 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+#container{
+    aspect-ratio: 16/9;
+    width: 80vw; /*ancho*/
+    position: relative; /*para que todos los elementos que tiene mi contenedor se posiciones dentro de mi clase container*/
+}
+#container .forma{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    background-color: yellowgreen;
+}
+#container .forma:nth-child(1){
+    background-color: aqua;
+    z-index: 2;
+}
+#container .forma:nth-child(2){
+    background-color: violet;
+    z-index: 2;
+}
+#container .forma:nth-child(3){
+    background-color: chocolate;
+    z-index: 1;
+}
+#container .forma:nth-child(4){
+    background-color: blue;
+    z-index: 2;
+}
+#container .forma:nth-child(5){
+    background-color: coral;
+    z-index: 2;
+}
+#container .forma:nth-child(6){
+    background-color: cornflowerblue;
+    z-index: 2;
+}
+#container .forma:nth-child(7){
+    background-color:crimson;
+    z-index: 2;
+}
+/*Configuracion*/
+#container[redondez="1"] .forma{
+    border-radius: 6rem;
+}
+#container[configuracion="1"] .forma:nth-child(1){
+    left: 0%;
+    top: 0%;
+    height: 50%;
+    width: 20%;
+
+}
+#container[configuracion="1"] .forma:nth-child(2){
+    left: 20%;
+    top: 0%;
+    height: 50%;
+    width: 30%;
+}
+#container[configuracion="1"] .forma:nth-child(3){
+    left: 50%;
+    top: 0%;
+    height: 100%;
+    width: 50%;
+
+}
+#container[configuracion="1"] .forma:nth-child(4){
+    left: 0%;
+    top: 50%;
+    height: 50%;
+    width: 30%;
+
+}
+#container[configuracion="1"] .forma:nth-child(5){
+    left: 30%;
+    top: 50%;
+    height: 50%;
+    width: 20%;
+
+}
+#container[configuracion="1"] .forma:nth-child(6){
+    left: 70%;
+    top: 50%;
+    height: 50%;
+    width: 30%;
+
+}
+#container[configuracion="1"] .forma:nth-child(7){
+    left: 85%;
+    top: 75%;
+    height: 25%;
+    width: 15%;
+}
+/*CONFIGURACION 2*/
+#container[redondez="2"] .forma{
+    border-radius: 0rem;
+}
+#container[configuracion="2"] .forma:nth-child(1){
+    left: 25%;
+    top: 20%;
+    height: 80%;
+    width: 15%;
+
+}
+#container[configuracion="2"] .forma:nth-child(2){
+    left: 40%;
+    top: 20%;
+    height: 50%;
+    width: 10%;
+
+}
